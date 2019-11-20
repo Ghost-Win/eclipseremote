@@ -5,7 +5,7 @@ import java.util.List;
 import cn.gucci.pojo.Goods;
 import cn.gucci.pojo.GoodsClass;
 import cn.gucci.pojo.Order;
-
+//1234
 public interface AdminDao {
 	//查询所有商品
 	public List<Goods> getGoodsListByPage(String sql);
