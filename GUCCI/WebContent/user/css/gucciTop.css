@@ -1,0 +1,373 @@
+@charset "UTF-8";
+/*初始化所有的基本样式*/
+*{
+	margin: 0;
+	padding: 0;
+	color: rgba(255,255,255,0.8);
+	font-family: "微软雅黑";
+	/*border: 1px solid red;*/
+}
+/*初始化a标签*/
+a{
+	text-decoration:none;
+}
+a:hover{
+	color: rgba(255,255,255,1);
+}
+/*初始化列表标签*/
+li{
+	list-style: none;
+	display: inline-block;
+}
+/*头部大容器*/
+#wrapper{
+	width: 1519px;
+	height: 340px;
+	/*border: 1px solid red;*/
+}
+/*头部导航容器*/
+.top-title-box{
+	background: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 1519px;
+	height: 119px;
+}
+/*头部导航鼠标移入效果*/
+.top-title-box:hover{
+	background-color: rgba(27,27,27,0.5);
+}
+/*头部左边导航容器*/
+.left-nav-box{
+	display: inline-block;
+	width: 450px;
+	height: 119px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 60px;
+	vertical-align: text-bottom;
+}
+.left-nav-ul{
+	display: inline-block;
+}
+/*头部左边导航下li标签之间的右外边距*/
+.left-nav-box .left-nav-ul li{
+	display: inline-block;
+	margin-right: 15px;
+}
+/*头部左边导航下第一个li标签与盒子的左外边距*/
+.left-nav-box .left-nav-ul li:nth-of-type(1){
+	margin-left: 40px;
+}
+/*为头部左边导航下第一个li标签前面添加一个背景小图标*/
+.left-nav-box .left-nav-ul li:nth-of-type(1)::before{
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 14px;
+	background-image: url(../img/1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+/*头部中间导航容器*/
+.center-nav-box{
+	font-size: 14px;
+	font-weight: 600;
+	width: 680px;
+	height: 119px;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+/*头部中间导航Logo*/
+.center-nav-box .logo{
+	width: 350px;
+	height: 50px;
+	text-align: center;
+	background: url(../img/3.png)no-repeat;
+	transform: scale(0.5);
+	margin-left: 136px;
+	margin-top: 12px;
+}
+/*头部中间导航下li标签之间的外边距*/
+.center-nav-box .center-nav-ul li{
+	position: relative;
+	margin-right: 90px;
+	margin-top: 10px;
+}
+/*头部中间导航li标签下隐藏ul盒子样式*/
+.center-nav-box .center-nav-ul .center-hide{
+	position: absolute;
+	top: 17px;
+	left: -35px;
+	width: 100px;
+	background: rgba(232,236,238,0.3);
+	border-radius: 5px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	display: none;
+}
+/*头部中间导航li4下隐藏的下拉列表*/
+.center-nav-box .center-nav-ul  li:nth-of-type(4) .center-hide{
+	left:-15px;
+}
+/*头部中间导航li6下隐藏的下拉列表*/
+.center-nav-box .center-nav-ul  li:nth-of-type(5) .center-hide{
+	left: -20px;
+}
+/*头部中间导航li下隐藏的下拉列表*/
+.center-nav-box .center-nav-ul .center-hide li{
+	display: block;
+	font-size: 13px;
+	font-family: "黑体";
+	font-weight: 100;
+	color: #fff;
+	line-height: 20px;
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/*头部右边导航容器*/
+.right-nav-box{
+	font-size: 13px;
+	font-weight: bold;
+	height: 119px;
+	line-height: 60px;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+/*头部右边导航下li标签左外边距*/
+.right-nav-box .right-nav-ul .item{
+	margin-left: 45px;
+}
+/*头部右边导航a标签字体*/
+.right-nav-box .right-nav-ul .item a{
+	font-family: "幼圆";
+}
+/*改变头部右边导航ul标签模块属性*/
+.right-nav-ul{
+	display: inline-block;
+}
+/*给右边导航区的i标签增加灰色爱心小图标背景*/
+.love::before{
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	background: url(../img/爱心.png) no-repeat;
+	background-size: 80% 80%;
+	vertical-align: text-top;
+}
+/*给右边导航区的i标签增加鼠标移入时的白色爱心小图标背景*/
+.right-nav-ul .item:hover .love::before{
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	background: url(../img/爱心2.png) no-repeat;
+	background-size: 80% 80%;
+	vertical-align: text-top;
+}
+/*给右边导航区的i标签增加灰色购物袋小图标背景*/
+.shopping-bag::before{
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	background: url(../img/购物袋.png) no-repeat;
+	background-size: 80% 80%;
+	vertical-align: text-top;
+}
+/*给右边导航区的i标签增加鼠标移入时的白色购物袋小图标背景*/
+.right-nav-ul .item:hover .shopping-bag::before{
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	background: url(../img/购物袋2.png) no-repeat;
+	background-size: 80% 80%;
+	vertical-align: text-top;
+}
+/*头部中间分类导航容器*/
+.center-classify{
+	width: 400px;
+	height: 160px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 80px;
+	margin-top: 200px;
+}
+/*头部中间分类标题样式*/
+.center-classify h6{
+	color: #ffffff;
+	font-size: 50px;
+	font-weight: 100;
+}
+/*头部中间分类li标签样式*/
+.center-classify .classify-ul .item{
+	/*border: 1px solid red;*/
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.8);
+}
+/*头部中间分类a标签样式*/
+.center-classify .classify-ul .item a{
+	font-size: 14px;
+}
+/*头部中间分类li1标签外边距*/
+.center-classify .classify-ul li:nth-of-type(1){
+	margin-right: 20px;
+}
+/*轮播图*/
+.top-img-box{
+	width: 1519px;
+	height: 540px;
+	background: url(../img/2.jpg) no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: -25px;
+	z-index: -99;
+	/*box-shadow: 0 100px 10px -8px rgba(0,0,0,0.5) inset;*/
+}
+/*轮播左边尖角*/
+.btn-left{
+	cursor: pointer;
+	position: absolute;
+	top: 250px;
+	width: 40px;
+	height: 40px;
+	background: url(../img/向左尖括号.png) no-repeat;
+	background-size: 100%;
+	z-index: 99;
+}
+/*轮播右边尖角*/
+.btn-right{
+	cursor: pointer;
+	position: absolute;
+	top: 250px;
+	left: 1470px;
+	width: 40px;
+	height: 40px;
+	background: url(../img/向右尖括号.png) no-repeat;
+	background-size: 100%;
+	z-index: 9999;
+}
+/*菱形小logo盒子样式*/
+.logo2-box{
+	position: absolute;
+	top: 497px;
+	left: 750px;
+	width: 35px;
+    height: 35px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    /*background: url(../img/古驰.png)no-repeat;*/
+    /*background-size: 500px;*/
+}
+/*菱形小logo样式*/
+.logo2{
+	width:30px ;
+	height: 30px;
+	background: url(../img/Gucci.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 10px;
+	transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+	overflow: hidden;
+}
+
+/*头部样式结束*/
+
+
+
+
+
+
+
+/*主题部分*/
+#body{
+	width: 98%;
+	height: 500px;
+	margin: -10px auto;
+	background-color: #eee;
+}
+#body span{
+	color: #333;
+}
+#body>div:nth-of-type(1){
+	width: 600px;
+	height: 500px;
+	margin: 0 auto;
+}
+#body>div:nth-of-type(1)>div:nth-of-type(1){
+	width: 120px;
+	height: 50px;
+	font-size: 30px;
+	font-weight: 100;
+	color: #000;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+#body>div:nth-of-type(1)>span:nth-of-type(1){
+	margin-left: 30px;
+}
+#name{
+	border: 1px solid transparent;
+	outline: none;
+	width: 395px;
+	height: 35px;
+	margin-left: 10px;
+	color: #000;
+	background-color: #fff;
+}
+#country{
+	width: 500px;
+	height: 35px;
+	margin-top: 30px;
+	outline: none;
+	color: #000;
+}
+option{
+	color: #000;
+}
+#birthday{
+	width: 496px;
+	height: 35px;
+	margin-top: 30px;
+	outline: none;
+	color: #000;
+	vertical-align: center;
+}
+#country_phone{
+	width: 250px;
+	height: 35px;
+	margin-top: 30px;
+	outline: none;
+	color: #000;
+}
+#optionPhone{
+	width: 210px;
+	height: 30px;
+	margin-top: 30px;
+	outline: none;
+	margin-right: 40px;
+	color: #000;
+}
+#update_sumbit{
+	width: 200px;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	background-color: #000;
+	margin: 30px auto;
+}
+#update_sumbit:hover{
+	cursor: pointer;
+	background-color: #333;
+}

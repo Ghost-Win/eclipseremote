@@ -1,0 +1,496 @@
+@charset "UTF-8";
+/*初始化所有的基本样式*/
+/*初始化a标签*/
+#wrapper a {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#wrapper a:hover {
+	color: rgb(255, 255, 255);
+}
+/*初始化列表标签*/
+#wrapper li {
+	list-style: none;
+	display: inline-block;
+}
+/*头部大容器*/
+#wrapper {
+	width: 1519px;
+	height: 340px;
+}
+/*头部导航容器*/
+.top-title-box {
+	background: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 1519px;
+	height: 119px;
+}
+/*头部导航鼠标移入效果*/
+.top-title-box:hover {
+	background-color: rgb(27, 27, 27);
+}
+/*头部左边导航容器*/
+.left-nav-box {
+	display: inline-block;
+	width: 450px;
+	height: 119px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 60px;
+	vertical-align: text-bottom;
+}
+
+.left-nav-ul {
+	display: inline-block;
+}
+/*头部左边导航下li标签之间的右外边距*/
+.left-nav-box .left-nav-ul li {
+	display: inline-block;
+	margin-right: 15px;
+}
+/*头部左边导航下第一个li标签与盒子的左外边距*/
+.left-nav-box .left-nav-ul li:nth-of-type(1) {
+	margin-left: 40px;
+}
+/*为头部左边导航下第一个li标签前面添加一个背景小图标*/
+.left-nav-box .left-nav-ul li:nth-of-type(1)::before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 14px;
+	background-image: url(../img/1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+/*头部中间导航容器*/
+.center-nav-box {
+	font-size: 14px;
+	font-weight: 600;
+	width: 750px;
+	height: 119px;
+	display: inline-block;
+	vertical-align: text-bottom;
+	text-align: center;
+	margin-left: -80px;
+}
+/*头部中间导航Logo*/
+.center-nav-box .logo {
+	width: 350px;
+	height: 50px;
+	text-align: center;
+	background: url(../img/3.png) no-repeat;
+	transform: scale(0.5);
+	margin: 0 auto;
+	margin-top: 12px;
+	cursor: pointer;
+}
+/*头部中间导航下li标签之间的外边距*/
+.center-nav-box .center-nav-ul li {
+	position: relative;
+	margin-right: 90px;
+	margin-top: 10px;
+}
+/*头部中间导航li标签下隐藏ul盒子样式*/
+.center-nav-box .center-nav-ul .center-hide {
+	position: absolute;
+	top: 20px;
+	left: -10px;
+	width: 100px;
+	background: rgb(232, 236, 238);
+	border-radius: 5px;
+	padding-bottom: 15px;
+	display: none;
+}
+
+/*头部中间导航li下隐藏的下拉列表*/
+.center-nav-box .center-nav-ul .center-hide li {
+	display: block;
+	font-size: 13px;
+	font-family: "黑体";
+	font-weight: 100;
+	color: black;
+	line-height: 20px;
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
+	height: 20px;
+	line-height: 20px;
+	border-bottom: 1px dashed rgb(100, 100, 100);
+}
+
+/*头部右边导航容器*/
+.right-nav-box {
+	font-size: 13px;
+	font-weight: bold;
+	height: 119px;
+	line-height: 60px;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+/*头部右边导航下li标签左外边距*/
+.right-nav-box .right-nav-ul .item {
+	margin-left: 20px;
+	margin-top: 30px;
+}
+/*头部右边导航a标签字体*/
+.right-nav-box .right-nav-ul .item a {
+	font-family: "幼圆";
+}
+/*改变头部右边导航ul标签模块属性*/
+.right-nav-ul {
+	display: inline-block;
+}
+/*给右边导航区的i标签增加灰色爱心小图标背景*/
+.love::before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	background: url(../img/爱心.png) no-repeat;
+	background-size: 80% 80%;
+	vertical-align: text-top;
+}
+/*给右边导航区的i标签增加鼠标移入时的白色爱心小图标背景*/
+.right-nav-ul .item:hover .love::before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	background: url(../img/爱心2.png) no-repeat;
+	background-size: 80% 80%;
+	vertical-align: text-top;
+}
+/*给右边导航区的i标签增加灰色购物袋小图标背景*/
+.shopping-bag::before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	background: url(../img/购物袋.png) no-repeat;
+	background-size: 80% 80%;
+	vertical-align: text-top;
+}
+/*给右边导航区的i标签增加鼠标移入时的白色购物袋小图标背景*/
+.right-nav-ul .item:hover .shopping-bag::before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	background: url(../img/购物袋2.png) no-repeat;
+	background-size: 80% 80%;
+	vertical-align: text-top;
+}
+/*头部中间分类导航容器*/
+.center-classify {
+	width: 400px;
+	height: 160px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 80px;
+	margin-top: 200px;
+}
+/*头部中间分类标题样式*/
+.center-classify h6 {
+	color: #ffffff;
+	font-size: 50px;
+	font-weight: 100;
+}
+/*头部中间分类li标签样式*/
+.center-classify .classify-ul .item {
+	/*border: 1px solid red;*/
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+}
+/*头部中间分类a标签样式*/
+.center-classify .classify-ul .item a {
+	font-size: 14px;
+}
+/*头部中间分类li1标签外边距*/
+.center-classify .classify-ul li:nth-of-type(1) {
+	margin-right: 20px;
+}
+/*轮播图*/
+.top-img-box {
+	width: 1519px;
+	height: 540px;
+	background: url(../img/2.jpg) no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: -25px;
+	z-index: -99;
+}
+/*轮播左边尖角*/
+.btn-left {
+	cursor: pointer;
+	position: absolute;
+	top: 250px;
+	width: 40px;
+	height: 40px;
+	background: url(../img/向左尖括号.png) no-repeat;
+	background-size: 100%;
+	z-index: 1;
+}
+/*轮播右边尖角*/
+.btn-right {
+	cursor: pointer;
+	position: absolute;
+	top: 250px;
+	left: 1470px;
+	width: 40px;
+	height: 40px;
+	background: url(../img/向右尖括号.png) no-repeat;
+	background-size: 100%;
+	z-index: 1;
+}
+/*菱形小logo盒子样式*/
+.logo2-box {
+	position: absolute;
+	top: 497px;
+	left: 750px;
+	width: 35px;
+	height: 35px;
+	background-color: #000000;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+/*菱形小logo样式*/
+.logo2 {
+	width: 30px;
+	height: 30px;
+	background: url(../img/Gucci.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 10px;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	overflow: hidden;
+}
+
+#show_goods_class>li {
+	width: 80px;
+	color: #fff;
+	margin: 20px 20px;
+	cursor: pointer;
+}
+
+.item1>ul {
+	width: 100px;
+	left: 60px;
+}
+
+/*头部样式结束*/
+@charset "UTF-8";
+/*登录子界面*/
+#login {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index:99;
+	display: none;
+}
+
+#login>div:nth-of-type(1) {
+	width: 650px;
+	height: 500px;
+	margin: 120px auto;
+	position: relative;
+	background-color: #fff;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(1) {
+	width: 550px;
+	height: 100px;
+	color: #666;
+	margin: 0 auto;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+	line-height: 100px;
+	border-bottom: 1px solid #ddd;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(2) {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	color: #999;
+	font-size: 50px;
+	font-weight: 100;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(2):hover {
+	cursor: pointer;
+	color: #333;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(3) {
+	width: 300px;
+	height: 300px;
+	margin: 30px auto;
+	font-size: 12px;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(3) p {
+	line-height: 30px;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(3) input {
+	width: 260px;
+	height: 35px;
+	outline: none;
+	border: 1px solid transparent;
+	background-color: #eee;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1), #login>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(2)
+	{
+	color: red;
+	width: 200px;
+	height: 12px;
+	margin: 5px 0;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(3) {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 10px;
+	background-color: #ddd;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(3):hover {
+	cursor: pointer;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(4) {
+	width: 100px;
+	height: 40px;
+	color: #fff;
+	margin: 20px auto;
+	text-align: center;
+	line-height: 40px;
+	background-color: #000;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(4):hover {
+	cursor: pointer;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(5) {
+	width: 55px;
+	height: 12px;
+	color: #888;
+	margin: 0 auto;
+}
+
+#login>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(5):hover {
+	cursor: pointer;
+	color: #000;
+}
+
+
+
+/*找回密码界面*/
+#forgotPassword{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 999;
+	display: none;
+}
+#forgotPassword>div:nth-of-type(1){
+	width: 550px;
+	height: 650px;
+	margin: 50px auto;
+	position: relative;
+	background-color: #fff;
+}
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(1){
+	width: 450px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 25px;
+	color: #666;
+	font-weight: 100;
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+}
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(2){
+	position: absolute;
+	top: 0;
+	right: 20px;
+	font-size: 50px;
+	font-weight: 100;
+	color: #999;
+}
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(2):hover{
+	cursor: pointer;
+	color: #333;
+}
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3){
+	width: 400px;
+	height: 400px;
+	margin: 30px auto;
+	font-size: 12px;
+}
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3) p{
+	line-height: 30px;
+}
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3)>input:nth-of-type(1),
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3)>input:nth-of-type(3),
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3)>input:nth-of-type(4){
+	width: 400px;
+	height: 35px;
+	border: 1px solid transparent;
+	outline: none;
+	background-color: #eee;
+}
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3)>input:nth-of-type(2){
+	width: 200px;
+	height: 35px;
+	outline: none;
+	margin-right: 20px;
+	background-color: #eee;
+	border: 1px solid transparent;
+}
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1),
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(2),
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(3),
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(4){
+	width: 200px;
+	height: 12px;
+	margin: 5px 0;
+	color: red;
+	margin: 5px 0;
+}
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3)>span:nth-of-type(1):hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(5){
+	width: 120px;
+	height: 40px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	margin: 30px auto;
+	background-color: #000;
+}
+#forgotPassword>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(5):hover{
+	cursor: pointer;
+	background-color: #333;
+}

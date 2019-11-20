@@ -1,0 +1,392 @@
+/*底部内容样式开始*/
+/*初始化所有的基本样式*/
+/*初始化a标签*/
+#wrapper3 a{
+	text-decoration:none;
+	color:rgba(255,255,255,0.5);
+}
+#wrapper3 a:hover{
+	color: rgba(255,255,255,1);
+}
+/*初始化列表标签*/
+#wrapper3 h6{
+	margin-left: 40px;
+}
+
+/*底部大容器*/
+#wrapper3{
+	width: 1519px;
+	height: 395px;
+	background-color: rgb(27,27,27);
+	color: rgba(255,255,255,0.8);
+}
+/*底部居中容器*/
+.footer-centerbox{
+	width: 1180px;
+	height: 395px;
+	margin: 0 auto;
+	line-height: 28px;
+	font-family: arial;
+	font-size: 8px;
+	font-weight: bold;
+	position: relative;
+}
+/*底部li标签初始化*/
+.footer-centerbox li{
+	display: block;
+	list-style:none;
+}
+/*底部标题标签样式*/
+.footer-centerbox h6{
+	margin-top: 55px;
+	font-size: 12px;
+	color: #E5DFD9;
+	opacity: .5;
+	margin-bottom: 10px;
+}
+/*底部左边开始第一个列表盒子*/
+.left-first-box{
+	/*border: 1px solid red;*/
+	width: 200px;
+	height: 300px;
+	padding-top:1px;
+}
+
+/*在底部左边第一个列表li前面添加配送小图标*/
+
+.delivery-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/配送.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 3px;
+	margin-right: 8px;
+}
+/*在底部左边第一个列表li前面添加鼠标移入时的配送小图标*/
+.left-first-ul li:nth-of-type(1):hover .delivery-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/配送2.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 3px;
+	margin-right: 8px; 
+}
+/*在底部左边第二个列表li前面添加礼物小图标*/
+.gift-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/礼物.png) no-repeat;
+	background-size: 100%;
+	margin-right: 8px;
+}
+/*在底部左边第二个列表li前面添加鼠标移入时的礼物小图标*/
+.left-first-ul li:nth-of-type(2):hover .gift-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/礼物2.png) no-repeat;
+	background-size: 100%;
+	margin-right: 8px;
+}
+
+/*底部左边开始第二,第三个,第四个列表盒子公有样式*/
+.left-second-box,
+.center-third-box,
+.right-fourth-box{
+	position: absolute;
+	top: 0;
+	width: 200px;
+}
+/*底部左边开始第二个列表盒子私有样式*/
+.left-second-box{
+	left: 201px;
+	height: 250px;
+	/*border: 1px solid red;*/
+}
+/*底部左边开始中间第三个列表盒子私有样式*/
+.center-third-box{
+	left: 401px;
+	height: 260px;
+	/*border: 1px solid red;*/
+}
+/*底部左边开始右边第四个列表盒子私有样式*/
+.right-fourth-box{
+	left: 602px;
+	height: 260px;
+	width: 250px;
+	/*border: 1px solid red;*/
+}
+/*底部左边开始右边第四个盒子li1前面的微信小图标*/
+.weixin-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/微信.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 3px;
+	margin-right: 8px;
+}
+/*底部左边开始右边第四个盒子鼠标移入时li1前面的微信小图标*/
+.right-fourth-ul li:nth-of-type(1):hover .weixin-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/微信2.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 3px;
+	margin-right: 8px;
+}
+/*底部左边开始右边第四个盒子li2前面的新浪微博小图标*/
+.weibo-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/新浪微博.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 1px;
+	margin-right: 8px;
+}
+/*底部左边开始右边第四个盒子鼠标移入时li2前面的新浪微博小图标*/
+.right-fourth-ul li:nth-of-type(2):hover .weibo-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/新浪微博2.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 1px;
+	margin-right: 8px;
+}
+/*底部左边开始右边第四个盒子li3前面的优酷视频小图标*/
+.youku-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/优酷.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 1px;
+	margin-right: 8px;
+}
+/*底部右边第四个盒子鼠标移入时li3前面的优酷视频小图标*/
+.right-fourth-ul li:nth-of-type(3):hover .youku-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/优酷2.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 1px;
+	margin-right: 8px;
+}
+/*底部左边开始右边第四个盒子li4前面的会话小图标*/
+.huihua-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/会话.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 1px;
+	margin-right: 8px;
+}
+/*底部左边开始右边第四个盒子鼠标移入时li4前面的会话小图标*/
+.right-fourth-ul li:nth-of-type(4):hover .huihua-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/会话2.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 1px;
+	margin-right: 8px;
+}
+/*底部左边开始右边第四个盒子li5前面的电话小图标*/
+.phone-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/电话.png) no-repeat;
+	background-size: 100%;
+	margin-right: 8px;
+}
+/*底部左边开始右边第四个盒子鼠标移入时li5前面的电话小图标*/
+.right-fourth-ul li:nth-of-type(5):hover .phone-pic::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/电话2.png) no-repeat;
+	background-size: 100%;
+	margin-right: 8px;
+}
+/*底部左边开始右边第四个盒子li4上边的外边距*/
+.right-fourth-ul li:nth-of-type(4){
+	margin-top: 25px;
+}
+/*底部右边最后一个盒子*/
+.right-fifth-box{
+	position: absolute;
+	left: 853px;
+	top: 0;
+	width: 400px;
+	height: 300px;
+	/*border: 1px solid red;*/
+}
+/*底部右边最后一个盒子标题与下一个元素的外边距*/
+.right-fifth-box .tit6{
+	margin-bottom: 0;
+}
+.input-box1{
+	position: relative;
+}
+/*底部右边最后一个盒子邮箱输入框*/
+.input-box1 input{
+	text-indent: 1em;
+	font-size: 12px;
+	margin-top: 15px;
+	background: #000000;
+	width: 200px;
+	height: 28px;
+	outline: none;
+	border: none;
+	color:rgba(255,255,255,0.4);
+}
+
+/*底部右边最后一个盒子邮箱输入框里的尖角符号容器*/
+.caret-box{
+	width: 26px;
+	height: 26px;
+	background: #000000;
+	position: absolute;
+	top: 25 px;
+	left: 172px;
+}
+/*底部右边最后一个盒子邮箱输入框里的尖角符号容器鼠标以上的效果*/
+.caret-box:hover{
+	cursor: pointer;
+	border: 1px solid rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.4);
+}
+/*底部右边最后一个盒子邮箱输入框里的尖角符号图标*/
+.caret-box .caret{
+	width: 8px;
+	height: 8px;
+	margin-left: 10px;
+	display: inline-block;
+	background: url(../img/尖角箭头上.png) no-repeat;
+	background-size: 100%;
+}
+/*底部右边最后一个盒子省份城市下拉列表*/
+.province,
+.city{
+	width: 125px;
+	height: 28px;
+	background-color: #000000;
+	font-size: 12px;
+	border: none;
+	color:rgb(255,255,255,0.7);
+}
+/*底部右边最后一个盒子省份城市下拉列表*/
+.province{
+	margin-right: 15px;
+}
+.other-regular{
+	margin-top: 8px;
+}
+/*底部右边最后一个盒子最下面的友情链接图片大容器*/
+.friendly-pic-box{
+	position: relative;
+}
+/*底部右边最后一个盒子最下面的友情链接图片小容器*/
+.friendly-pic-box div{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-size: 100%;
+	position: absolute;
+}
+/*底部右边最后一个盒子最下面所有的友情链接图片鼠标移上背景显示大小*/
+.friendly-pic-box div:hover{
+	background-size: 100%;
+	cursor: pointer;
+}
+/*底部右边最后一个盒子最下面的友情链接图片1*/
+.friendly-pic1{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	background: url(../img/brand_gucci_1.png)no-repeat;
+}
+/*底部右边最后一个盒子最下面的友情链接图片1鼠标移上效果*/
+.friendly-pic1:hover{
+	background: url(../img/brand_gucci_2.png)no-repeat;
+}
+/*底部右边最后一个盒子最下面的友情链接图片2*/
+.friendly-pic2{
+	height: 35px !important;
+	background: url(../img/Gucci1.png)no-repeat;
+	top: 16px;
+	left: 75px;
+}
+/*底部右边最后一个盒子最下面的友情链接图片2鼠标移上效果*/
+.friendly-pic2:hover{
+	background: url(../img/Gucci2.png)no-repeat;
+}
+/*底部右边最后一个盒子最下面的友情链接图片3*/
+.friendly-pic3{
+	width: 90px !important;
+	height: 75px !important;
+	background: url(../img/icon-svg-equilibrium.png)no-repeat;
+	top: -10px;
+	left: 145px;
+}
+/*底部右边最后一个盒子最下面的友情链接图片3鼠标移上效果*/
+.friendly-pic3:hover{
+	background: url(../img/icon-svg-equilibrium2.png)no-repeat;
+}
+/*底部右边最后一个盒子最下面的友情链接图片4*/
+.friendly-pic4{
+	width: 140px !important;
+	height: 50px !important;
+	background: url(../img/icon-svg-gucci-garden1.png)no-repeat;
+	top: 10px;
+	left: 235px;
+}
+/*底部右边最后一个盒子最下面的友情链接图片4鼠标移上效果*/
+.friendly-pic4:hover{
+	background: url(../img/icon-svg-gucci-garden2.png)no-repeat;
+}
+/*底部最下面版权信息容器*/
+.copyright-box{
+	position: absolute;
+	top: 350px;
+	width: 780px;
+	color: #E5DFD9 !important;
+	opacity: .5;
+	vertical-align: middle;
+}
+/*底部最下面版权信息的a标签*/
+.copyright-box a{
+	position: relative;
+	margin-left: 60px;
+	overflow: hidden;
+}
+/*底部最下面版权信息的小图标2*/
+.gongshang{
+	position: absolute;
+	top: -1px;
+	left: -18px;
+}
+/*底部样式结束*/
